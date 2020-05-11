@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <link rel="stylesheet" type="text/css" href="mystyle.css">
         <title>My Web Page on Scuba Diving!</title>
         <style>
         body {
@@ -8,13 +9,26 @@
         }
         .img-container {
           text-align: center;
+          display: center;
+          margin: 25px 10px;
         }
             h1 {
-                color: blue;
+                color:$blue;
                 text-align: center;
                 font-family:fantasy;serif
                 font-weight: bold;
                 font-size: 48px
+              }
+
+              //Colors
+              $blue: #1d90ff;
+              $black: #000000;
+
+              #myHeader {
+                background-color:white;
+                color:$blue;
+                padding:40px;
+                text-align: center;
               }
               h2 {
                 color: white;
@@ -24,41 +38,67 @@
                 font-size: 32px
               }
               h3 {
-                color: blue;
+                color: $blue;
                 text-align: center;
                 font-family:fantasy;serif
                 font-weight: lighter;
                 font-size: 28px
               }
               p {
-                color: black;
+                color: $black;
                 text-align: justify;
                 font-family: sans-serif;serif
                 font-weight: 400;
                 font-size: 19px
               }
               h4 {
-                color: blue;
+                color: $blue;
                 text-align: left;
                 font-family: serif;sans-serif
                 font-weight: normal;
                 font-size: 28px
               }
-              ul {
-                color: black;
+              nav ul {
+                color: $black;
                 text-align: left;
                 font-family: sans-serif;serif
                 font-weight: normal;
                 font-size: 19px
               }
+              span {
+                color:white;
+              }
+              .extra span {
+                color: inherit;
+              }
               p.big {
                 line-height: 1.6;
+              }
+              table {
+                border: 2px solid black;
+                border-collapse: collapse;
+                width: 50%
+              }
+              th,td {
+                border: 1px solid black;
+                padding: 5px;
+                text-align: center;
+                background-color: white;
+              }
+              th {
+                background-color: blue;
+                color: white;
+              }
+              @media screen and (min-width: 400px), screen and (orientation:landscape) {
+                body {
+                  color: green;
+                }
               }
         </style>
     </head>
     <body>
-        <h1>Lets go Scuba Diving in The Bahamas!</h1>
-        <h2>I'll meet you on the ocean floor where the sharks are your travel guides!</h2>
+        <h1>Lets go <span>Scuba Diving</span> in The Bahamas!</h1>
+        <h2 id="myHeader">I'll meet you on the ocean floor where the sharks are your travel guides!</h2>
       <div class="img-container"> <!-- Block parent element -->
   <img src="https://bahamascruiseexcursions.com/wp-content/uploads/2016/07/Nassau-Share-Dive-Photography-1024x707.jpg"alt="bahamascruiseexcursions.com">
 
@@ -67,12 +107,78 @@
         <p class=big>Scuba diving gives you the opportunity to interact with your favorite marine animals and even discover some new ones.You enter a totally new world that is unthinkable, unimaginable and is ever changing. Scuba diving is like being a child again with sunken treasures, colourful creatures and mysterious new worlds all presenting an incredible insight into what it feels like to be almost totally naïve and wondrous about the environment in which you find yourself.<br><br>The waters of The Bahamas are spectacular from space but under the waves is where the beauty awaits. With The Bahamas being made up of 700 islands and cays, there are so many wrecks, blue holes, reefs and more that have be to explored! With their warm water, vibrant sun and breathtakinly beautiful blue seas, The Bahamas makes a great destination for scuba diving.</p>
         <h2>With no further delay, lets dive right in!</h2>
         <h4>Here are some fun facts about The Bahamas:</h4>
-        <ul stlye="list-style-type-circle, padding-bottom: 40px;">
+        <ul stlye="list-style-type-circle,width: 20em; margin:1em 0; padding: 1px 0;">
           <li>The Bahamas has the third largest barrier reef on the planent: Stretching more than 190 miles in length, the Andros Barrier Reef is one of the biggest barrier reefs in the world – and the third largest living organism on the planet! It sits along the edge of an underwater trench called the Tongue of the Ocean, running parallel to the east coast of the island of Andros.</li>
           <li>Hollywood loves Paradise: The Bahamas is a popular destination for filming movies in fact, more than 30 films have been made in The Bahamas i.e. Pirates of the Caribbean, Thunderball, Casino Royale and Into the Deep.</li>
           <li>The Bahamas has one of the longest known underwater cave systems in the world: The underwater cave is 6 miles long and can be found at the Lucayan National Park, Grand Bahama.</li>
           <li>The origin of the name "The Bahamas" is Spanish: The name “Bahamas” comes from the Spanish words “baja mar”, meaning shallow water or sea.</li>
-          <div class="img-container"> <!-- Block parent element -->
-<img src="https://mysteriesofantiquityblog.files.wordpress.com/2018/08/original_open-uri20131115-21528-tt2g5a1.jpg?w=736"alt="mysteriesofantiquityblog.files.wordpress.com"
+
+      <h2>Where is some of the best dive sites in The Bahamas?</h2>
+        <table>
+          <table style="margin-left:auto;margin-right:auto;">
+          <tr>
+              <th>Shark Dives</th>
+              <th>Blue Hole Dives</th>
+              <th>Reef and Wreck Dives</th>
+          </tr>
+          <tr>
+              <td>Exuma</td>
+              <td>Long Island</td>
+              <td>New Providence</td>
+          </tr>
+          <tr>
+              <td>Bimini</td>
+              <td>Andros</td>
+              <td>San Salvador</td>
+          </tr>
+          <tr>
+              <td>New Providence</td>
+              <td>Cat Island</td>
+              <td>Eleuthera</td>
+          </tr>
+        </table>
+     <div class="img-container"> <!-- Block parent element -->
+<img src="https://www.danintranet.org/media/adimg/12356_m.jpg"alt="https://www.danintranet.org/media/adimg/12356_m.jpg">
+<h3>Interested in getting certified? Click the diving certification you're interested in!</h2>
+  <div class="card" style="width: 18rem;">
+  <img src="https://coralbeachdivecenter.com/wp-content/uploads/2018/06/openwater-300x170.jpg" class="card-img-left" alt="https://coralbeachdivecenter.com/">
+  <div class="card-body">
+    <h2 class="card-title">Open Water</h2>
+    <p class="card-text">PADI Open Water Diver course – the world’s most popular and widely recognized scuba course. Millions of people have learned to scuba dive and gone on to discover the wonders of the aquatic world through this course.</p>
+    <a href="https://www.padi.com/courses/open-water-diver" class="btn btn-primary">Click Here</a>
+  </div>
+  <div class="card" style="width: 18rem;">
+  <img src="https://divers.se/wp-content/uploads/2019/03/PADI-Advanced-open-water-300x300.jpg" class="card-img-center" alt="https://divers.se/wp-content/uploads/2019/03/PADI-Advanced-open-water-300x300.jpg">
+  <div class="card-body">
+    <h2 class="card-title">Advanced Open Water</h2>
+    <p class="card-text">You don’t have to be “advanced” to take this course – it’s designed to advance your diving, so you can start right after earning your PADI Open Water Diver certification. The course helps build confidence and expand your scuba skills through different Adventure Dives.</p>
+    <a href="https://www.padi.com/courses/advanced-open-water" class="btn btn-primary">Click Here</a>
+  </div>
+  <div class="card" style="width: 18rem;">
+  <img src="https://www.roho.co.uk/pub/media/catalog/product/cache/ec0220039b94dee9faddde1110292608/e/n/en-rescue-twitter-post-440x220_orig.jpg" class="card-img-right" alt="https://www.roho.co.uk/pub/media/catalog/product/cache/ec0220039b94dee9faddde1110292608/e/n/en-rescue-twitter-post-440x220_orig.jpg">
+  <div class="card-body">
+    <h2 class="card-title">Rescue Diver</h2>
+    <p class="card-text">Scuba divers describe the PADI Rescue Diver course as the most challenging, yet most rewarding course they’ve ever taken. Why? Because you learn to prevent and manage problems in the water, and become more confident in your skills as a diver, knowing that you can help others if needed. During the course, you learn to become a better buddy by practicing problem solving skills until they become second nature.</p>
+    <a href="https://www.padi.com/courses/rescue-diver" class="btn btn-primary">Click Here</a>
+  </div>
+
+  <h2>3 reasons why you should go scuba diving in The Bahamas!</h2>
+
+  <div class="container">
+    <div class="row">
+      <div class="col align-self-start">
+        Big Animal Diving
+      </div>
+      <div class="col align-self-center">
+        Crystal Clear Waters
+      </div>
+      <div class="col align-self-end">
+        Fun in the Sun
+      </div>
+    </div>
+  </div>
+
+ <div class="img-container"> <!-- Block parent element -->
+     <img src="https://www.sportdiver.com/sites/sportdiver.com/files/styles/655_1x_/public/images/2017/01/perfect_ten_newprovidence_illustration0217.jpg?itok=bW2XCWTt&fc=50,50" alt="https://sportdiver.com">
     </body>
 </html>
