@@ -1,0 +1,92 @@
+<style>
+        body {
+          background-color: turquoise;
+        }
+        .img-container {
+          text-align: center;
+          display: center;
+          margin: 25px 10px;
+        }
+            h1 {
+                color:$blue;
+                text-align: center;
+                font-family:fantasy;serif
+                font-weight: bold;
+                font-size: 48px
+              }
+
+              //Colors
+              $blue: #1d90ff;
+              $black: #000000;
+
+              #myHeader {
+                background-color:white;
+                color:$blue;
+                padding:40px;
+                text-align: center;
+              }
+              h2 {
+                color: white;
+                text-align: center;
+                font-family: serif;
+                font-weight: bold;
+                font-size: 32px
+              }
+              h3 {
+                color: $blue;
+                text-align: center;
+                font-family:fantasy;serif
+                font-weight: lighter;
+                font-size: 28px
+              }
+              p {
+                color: $black;
+                text-align: justify;
+                font-family: sans-serif;serif
+                font-weight: 400;
+                font-size: 19px
+              }
+              h4 {
+                color: $blue;
+                text-align: left;
+                font-family: serif;sans-serif
+                font-weight: normal;
+                font-size: 28px
+              }
+              nav ul {
+                color: $black;
+                text-align: left;
+                font-family: sans-serif;serif
+                font-weight: normal;
+                font-size: 19px
+              }
+              span {
+                color:white;
+              }
+              .extra span {
+                color: inherit;
+              }
+              p.big {
+                line-height: 1.6;
+              }
+              table {
+                border: 2px solid black;
+                border-collapse: collapse;
+                width: 50%
+              }
+              th,td {
+                border: 1px solid black;
+                padding: 5px;
+                text-align: center;
+                background-color: white;
+              }
+              th {
+                background-color: blue;
+                color: white;
+              }
+              @media screen and (min-width: 400px), screen and (orientation:landscape) {
+                body {
+                  color: green;
+                }
+              }
+        </style>
